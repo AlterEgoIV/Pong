@@ -1,0 +1,10 @@
+* Main Menu Screen
+	- Play vs AI
+	- Exit
+	
+* Play Screen
+	- User input controlled paddle
+	- AI controlled paddle
+	- Ball
+	- Scores
+	- Sound effects
