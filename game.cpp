@@ -23,7 +23,7 @@ void Game::run()
 
                 case sf::Event::KeyPressed:
                 {
-                    inputHandler.handleKeyPressed(event.key.code);
+                    inputHandler.keyboard.pressKey(event.key.code);
 
                     if(event.key.code == sf::Keyboard::BackSpace)
                     {
@@ -35,7 +35,7 @@ void Game::run()
 
                 case sf::Event::KeyReleased:
                 {
-                    inputHandler.handleKeyReleased(event.key.code);
+                    inputHandler.keyboard.releaseKey(event.key.code);
 
                     break;
                 }
@@ -60,7 +60,7 @@ void Game::run()
             }
         }
 
-        if(inputHandler.isKeyPressed(sf::Keyboard::Key::H))
+        if(inputHandler.keyboard.isKeyPressed(sf::Keyboard::Key::H))
         {
             std::cout << "True";
         }

@@ -3,20 +3,19 @@
 
 #include <SFML/Graphics.hpp>
 #include <array>
+#include "keyboard.hpp"
 
 class InputHandler
 {
 public:
     InputHandler();
-    virtual ~InputHandler();
-    void handleKeyPressed(const sf::Keyboard::Key& keyCode);
-    void handleKeyReleased(const sf::Keyboard::Key& keyCode);
-    bool isKeyPressed(const sf::Keyboard::Key& keyCode);
+
+    Keyboard keyboard;
 
 protected:
 
 private:
-    std::array<bool, sf::Keyboard::KeyCount> keys;
+
 };
 
 #endif // INPUTHANDLER_H

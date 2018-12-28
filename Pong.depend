@@ -399,7 +399,7 @@
 	"inputhandler.hpp"
 	"renderer.hpp"
 
-1545430807 source:f:\programming\sfml\pong\game.cpp
+1545996693 source:f:\programming\sfml\pong\game.cpp
 	<iostream>
 	"game.hpp"
 
@@ -846,10 +846,18 @@
 1545425962 f:\programming\sfml\pong\ball.hpp
 	"gameobject.hpp"
 
-1545430660 source:f:\programming\sfml\pong\inputhandler.cpp
+1545996329 source:f:\programming\sfml\pong\inputhandler.cpp
 	"inputhandler.hpp"
 
-1545431012 f:\programming\sfml\pong\inputhandler.hpp
+1545996604 f:\programming\sfml\pong\inputhandler.hpp
+	<SFML/Graphics.hpp>
+	<array>
+	"keyboard.hpp"
+
+1545996487 source:f:\programming\sfml\pong\keyboard.cpp
+	"keyboard.hpp"
+
+1545996533 f:\programming\sfml\pong\keyboard.hpp
 	<SFML/Graphics.hpp>
 	<array>
 

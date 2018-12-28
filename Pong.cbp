@@ -57,6 +57,8 @@
 		<Unit filename="gameobject.hpp" />
 		<Unit filename="inputhandler.cpp" />
 		<Unit filename="inputhandler.hpp" />
+		<Unit filename="keyboard.cpp" />
+		<Unit filename="keyboard.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="paddle.cpp" />
 		<Unit filename="paddle.hpp" />
