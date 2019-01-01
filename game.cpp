@@ -1,10 +1,25 @@
 #include <iostream>
 #include "game.hpp"
+#include "screenname.hpp"
+#include "mainmenuscreen.hpp"
+#include "playscreen.hpp"
 
 Game::Game() : window(sf::VideoMode(800, 600), "Pong"), renderer(window)
 {
     window.setFramerateLimit(60);
     window.setKeyRepeatEnabled(false);
+}
+
+void Game::init()
+{
+    screens.emplace(ScreenName::MAINMENU_SCREEN, new MainMenuScreen(*this, window, renderer));
+    screens.emplace(ScreenName::PLAY_SCREEN, new PlayScreen(*this, window, renderer));
+    screen = screens[ScreenName::PLAY_SCREEN];
+}
+
+void Game::changeScreen(ScreenName screenName)
+{
+    screen = screens[screenName];
 }
 
 void Game::run()

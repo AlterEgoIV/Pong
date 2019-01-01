@@ -1,15 +1,10 @@
-#include "game.hpp"
-#include "vector2.hpp"
 #include <SFML/Graphics.hpp>
-#include <iostream>
+#include "game.hpp"
 
 int main()
 {
-    Vector2 v1{5., 3.};
-    sf::Vector2f v2 = v1;
-
     Game game;
-
+    game.init();
     game.run();
 
     return 0;

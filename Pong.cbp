@@ -60,12 +60,19 @@
 		<Unit filename="keyboard.cpp" />
 		<Unit filename="keyboard.hpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="mainmenuscreen.cpp" />
+		<Unit filename="mainmenuscreen.hpp" />
 		<Unit filename="paddle.cpp" />
 		<Unit filename="paddle.hpp" />
+		<Unit filename="playscreen.cpp" />
+		<Unit filename="playscreen.hpp" />
 		<Unit filename="renderer.cpp" />
 		<Unit filename="renderer.hpp" />
 		<Unit filename="scene.cpp" />
 		<Unit filename="scene.hpp" />
+		<Unit filename="screen.cpp" />
+		<Unit filename="screen.hpp" />
+		<Unit filename="screenname.hpp" />
 		<Unit filename="vector2.cpp" />
 		<Unit filename="vector2.hpp" />
 		<Extensions>

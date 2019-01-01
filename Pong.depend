@@ -1,9 +1,7 @@
 # depslib dependency file v1.0
-1544129267 source:f:\programming\sfml\pong\main.cpp
-	"game.hpp"
-	"vector2.hpp"
+1546367987 source:f:\programming\sfml\pong\main.cpp
 	<SFML/Graphics.hpp>
-	<iostream>
+	"game.hpp"
 
 1486736397 f:\program files\sfml-2.4.2\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -393,15 +391,18 @@
 	<string>
 	<vector>
 
-1545428584 f:\programming\sfml\pong\game.hpp
-	<iostream>
+1546378183 f:\programming\sfml\pong\game.hpp
+	<map>
 	<SFML/Graphics.hpp>
 	"inputhandler.hpp"
 	"renderer.hpp"
 
-1545996693 source:f:\programming\sfml\pong\game.cpp
+1546378702 source:f:\programming\sfml\pong\game.cpp
 	<iostream>
 	"game.hpp"
+	"screenname.hpp"
+	"mainmenuscreen.hpp"
+	"playscreen.hpp"
 
 1542839068 source:f:\programming\sfml\pong\renderer.cpp
 	"renderer.hpp"
@@ -846,7 +847,7 @@
 1545425962 f:\programming\sfml\pong\ball.hpp
 	"gameobject.hpp"
 
-1545996329 source:f:\programming\sfml\pong\inputhandler.cpp
+1545996701 source:f:\programming\sfml\pong\inputhandler.cpp
 	"inputhandler.hpp"
 
 1545996604 f:\programming\sfml\pong\inputhandler.hpp
@@ -860,4 +861,23 @@
 1545996533 f:\programming\sfml\pong\keyboard.hpp
 	<SFML/Graphics.hpp>
 	<array>
+
+1546371491 source:f:\programming\sfml\pong\screen.cpp
+	"screen.hpp"
+
+1546375754 f:\programming\sfml\pong\screen.hpp
+	<SFML/Graphics.hpp>
+
+1546378917 f:\programming\sfml\pong\screenname.hpp
+
+1546365640 source:f:\programming\sfml\pong\playscreen.cpp
+	"playscreen.hpp"
+
+1546377650 f:\programming\sfml\pong\playscreen.hpp
+	"screen.hpp"
+
+1542902921 f:\program files\sfml-2.5.1\include\sfml\graphics
+
+1546378725 f:\programming\sfml\pong\mainmenuscreen.hpp
+	"screen.hpp"
 
