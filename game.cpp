@@ -4,10 +4,15 @@
 #include "mainmenuscreen.hpp"
 #include "playscreen.hpp"
 
-Game::Game() : window(sf::VideoMode(800, 600), "Pong"), renderer(window)
+Game::Game() : window(sf::VideoMode(800, 600), "Pong"), inputHandler(keyboard), renderer(window)
 {
     window.setFramerateLimit(60);
     window.setKeyRepeatEnabled(false);
+}
+
+Game::~Game()
+{
+    delete screen;
 }
 
 void Game::init()
@@ -38,19 +43,16 @@ void Game::run()
 
                 case sf::Event::KeyPressed:
                 {
-                    inputHandler.keyboard.pressKey(event.key.code);
-
-                    if(event.key.code == sf::Keyboard::BackSpace)
-                    {
-
-                    }
+                    //inputHandler.keyboard.pressKey(event.key.code);
+                    keyboard.pressKey(event.key.code);
 
                     break;
                 }
 
                 case sf::Event::KeyReleased:
                 {
-                    inputHandler.keyboard.releaseKey(event.key.code);
+                    //inputHandler.keyboard.releaseKey(event.key.code);
+                    keyboard.releaseKey(event.key.code);
 
                     break;
                 }
@@ -75,10 +77,13 @@ void Game::run()
             }
         }
 
-        if(inputHandler.keyboard.isKeyPressed(sf::Keyboard::Key::H))
-        {
-            std::cout << "True";
-        }
+//        if(keyboard.isKeyPressed(sf::Keyboard::Key::H))
+//        {
+//            std::cout << "True";
+//        }
+
+        std::vector<Event> events = inputHandler.update();
+        screen->update(events);
 
         renderer.render();
     }

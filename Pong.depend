@@ -391,13 +391,13 @@
 	<string>
 	<vector>
 
-1546378183 f:\programming\sfml\pong\game.hpp
+1546730025 f:\programming\sfml\pong\game.hpp
 	<map>
 	<SFML/Graphics.hpp>
 	"inputhandler.hpp"
 	"renderer.hpp"
 
-1546378702 source:f:\programming\sfml\pong\game.cpp
+1546730109 source:f:\programming\sfml\pong\game.cpp
 	<iostream>
 	"game.hpp"
 	"screenname.hpp"
@@ -847,13 +847,17 @@
 1545425962 f:\programming\sfml\pong\ball.hpp
 	"gameobject.hpp"
 
-1545996701 source:f:\programming\sfml\pong\inputhandler.cpp
+1546735036 source:f:\programming\sfml\pong\inputhandler.cpp
 	"inputhandler.hpp"
+	"inputcontext.hpp"
+	"contextname.hpp"
+	"playcontext.hpp"
 
-1545996604 f:\programming\sfml\pong\inputhandler.hpp
-	<SFML/Graphics.hpp>
-	<array>
+1546735036 f:\programming\sfml\pong\inputhandler.hpp
+	<vector>
+	<map>
 	"keyboard.hpp"
+	"event.hpp"
 
 1545996487 source:f:\programming\sfml\pong\keyboard.cpp
 	"keyboard.hpp"
@@ -862,22 +866,64 @@
 	<SFML/Graphics.hpp>
 	<array>
 
-1546371491 source:f:\programming\sfml\pong\screen.cpp
+1546551735 source:f:\programming\sfml\pong\screen.cpp
 	"screen.hpp"
 
-1546375754 f:\programming\sfml\pong\screen.hpp
+1546730200 f:\programming\sfml\pong\screen.hpp
 	<SFML/Graphics.hpp>
+	<vector>
 
 1546378917 f:\programming\sfml\pong\screenname.hpp
 
-1546365640 source:f:\programming\sfml\pong\playscreen.cpp
+1546735534 source:f:\programming\sfml\pong\playscreen.cpp
 	"playscreen.hpp"
+	"event.hpp"
+	<iostream>
 
-1546377650 f:\programming\sfml\pong\playscreen.hpp
+1546730266 f:\programming\sfml\pong\playscreen.hpp
+	<vector>
 	"screen.hpp"
 
 1542902921 f:\program files\sfml-2.5.1\include\sfml\graphics
 
-1546378725 f:\programming\sfml\pong\mainmenuscreen.hpp
+1546730200 f:\programming\sfml\pong\mainmenuscreen.hpp
 	"screen.hpp"
+
+1546730200 source:f:\programming\sfml\pong\mainmenuscreen.cpp
+	"mainmenuscreen.hpp"
+
+1546455077 source:f:\programming\sfml\pong\command.cpp
+
+1546457196 source:f:\programming\sfml\pong\moveupcommand.cpp
+	"moveupcommand.hpp"
+
+1546457221 f:\programming\sfml\pong\moveupcommand.hpp
+	"command.hpp"
+
+1546455177 f:\programming\sfml\pong\command.hpp
+
+1546732400 f:\programming\sfml\pong\event.hpp
+
+1546733526 source:f:\programming\sfml\pong\inputcontext.cpp
+	"inputcontext.hpp"
+	"keyname.hpp"
+
+1546733241 f:\programming\sfml\pong\inputcontext.hpp
+	<vector>
+	<map>
+	<SFML/Graphics.hpp>
+
+1546734515 source:f:\programming\sfml\pong\playcontext.cpp
+	"playcontext.hpp"
+	"event.hpp"
+	"inputhandler.hpp"
+	"keyname.hpp"
+
+1546729038 f:\programming\sfml\pong\playcontext.hpp
+	<vector>
+	"inputcontext.hpp"
+
+1546724555 f:\programming\sfml\pong\contextname.hpp
+
+1546732375 f:\programming\sfml\pong\keyname.hpp
 

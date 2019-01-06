@@ -13,6 +13,7 @@ class Game
 {
 public:
     Game();
+    ~Game();
     void init();
     void run();
     void changeScreen(ScreenName screenName);
@@ -22,6 +23,7 @@ private:
     sf::Event event;
     std::map<ScreenName, Screen*> screens;
     Screen* screen;
+    Keyboard keyboard;
     InputHandler inputHandler;
     Renderer renderer;
 };

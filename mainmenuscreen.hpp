@@ -7,7 +7,7 @@ class MainMenuScreen : public Screen
 {
 public:
     MainMenuScreen(Game& game, sf::Window& window, Renderer& renderer);
-    void update() override;
+    void update(std::vector<Event> events) override;
 
 private:
 

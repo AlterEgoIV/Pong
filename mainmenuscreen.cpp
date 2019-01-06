@@ -6,7 +6,7 @@ MainMenuScreen::MainMenuScreen(Game& game, sf::Window& window, Renderer& rendere
 
 }
 
-void MainMenuScreen::update()
+void MainMenuScreen::update(std::vector<Event> events)
 {
 
 }
